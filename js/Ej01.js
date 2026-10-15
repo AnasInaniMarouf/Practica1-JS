@@ -8,9 +8,9 @@ let array = [
     ["Raul", "Jimenez", "5º ESO", [8, 8, 4]],
 ]
 
+let parrafo = document.getElementById("parrafo");
+
 for(let i = 0; i < array.length; i++) {
 
-    let parrafo = document.createElement("p");
-    parrafo.innerText = "Array " + (i + 1) + ": " + array[i];
-    main.appendChild(parrafo);
+    parrafo.innerText += "Array " + (i + 1) + ": " + array[i] + "\n\n";
 }
